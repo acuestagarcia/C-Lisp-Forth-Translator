@@ -6,3 +6,13 @@ trad.y: A Yacc-based frontend that parses a restricted subset of the C programmi
 back.y: A Yacc-based backend that converts the intermediate Lisp code into final Forth code using postfix notation.
 
 The project focuses on syntax parsing, semantic translation, and code generation, and follows the academic specifications for functional correctness and format compliance using clisp and gforth.
+
+## How to run
+C to Lisp
+
+```./trad < pruebas/<some_test> | clisp```
+
+C to Forth
+
+```./trad < pruebas/<some_test> | ./back | gforth```
+
